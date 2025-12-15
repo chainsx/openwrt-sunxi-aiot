@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/input/sensor/built-in.a := rm -f bsp/drivers/input/sensor/built-in.a;  printf "bsp/drivers/input/sensor/%s " sc7a20/built-in.a stk3x1x/built-in.a mir3da/built-in.a msa/built-in.a mmc5603/built-in.a bmi323/built-in.a qmi8658/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/input/sensor/built-in.a

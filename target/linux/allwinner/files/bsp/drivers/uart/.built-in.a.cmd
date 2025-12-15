@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/uart/built-in.a := rm -f bsp/drivers/uart/built-in.a;  printf "bsp/drivers/uart/%s " sunxi-uart-ng-core.o sunxi-uart-ng-dma.o sunxi-uart-trace.o early_printk.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/uart/built-in.a

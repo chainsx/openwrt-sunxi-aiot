@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/ve/cedar-ve/built-in.a := rm -f bsp/drivers/ve/cedar-ve/built-in.a;  printf "bsp/drivers/ve/cedar-ve/%s " cedar_ve.o flush_cache.o platforms/ve_plat_sun60iw2.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/ve/cedar-ve/built-in.a

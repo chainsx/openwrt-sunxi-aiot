@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/usb/host/built-in.a := rm -f bsp/drivers/usb/host/built-in.a;  printf "bsp/drivers/usb/host/%s " ehci-sunxi.o ohci-sunxi.o sunxi-hci.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/usb/host/built-in.a

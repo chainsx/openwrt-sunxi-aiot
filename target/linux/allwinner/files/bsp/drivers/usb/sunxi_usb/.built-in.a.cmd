@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/usb/sunxi_usb/built-in.a := rm -f bsp/drivers/usb/sunxi_usb/built-in.a;  printf "bsp/drivers/usb/sunxi_usb/%s " udc/sunxi_udc.o udc/sunxi_udc_board.o udc/sunxi_udc_debug.o udc/sunxi_udc_dma.o usbc/usbc.o usbc/usbc_dev.o usbc/usbc_phy.o misc/sunxi_usb_debug.o sunxi_usb_trace.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/usb/sunxi_usb/built-in.a

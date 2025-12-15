@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/input/misc/built-in.a := rm -f bsp/drivers/input/misc/built-in.a;  printf "bsp/drivers/input/misc/%s " hall_sensor/built-in.a vibrator/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/input/misc/built-in.a

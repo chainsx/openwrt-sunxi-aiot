@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/ve/built-in.a := rm -f bsp/drivers/ve/built-in.a;  printf "bsp/drivers/ve/%s " cedar-ve/built-in.a google-ve/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/ve/built-in.a

@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/mtd/parsers/built-in.a := rm -f bsp/drivers/mtd/parsers/built-in.a;  printf "bsp/drivers/mtd/parsers/%s " sunxipart.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/mtd/parsers/built-in.a

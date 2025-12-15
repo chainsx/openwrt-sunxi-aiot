@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/iommu/built-in.a := rm -f bsp/drivers/iommu/built-in.a;  printf "bsp/drivers/iommu/%s " sunxi-iommu-common.o sunxi-iommu-pgtable.o sunxi-iommu-v2.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/iommu/built-in.a

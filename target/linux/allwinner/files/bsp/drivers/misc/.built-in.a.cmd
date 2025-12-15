@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/misc/built-in.a := rm -f bsp/drivers/misc/built-in.a;  printf "bsp/drivers/misc/%s " sunxi-rf/built-in.a sunxi-addr/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/misc/built-in.a

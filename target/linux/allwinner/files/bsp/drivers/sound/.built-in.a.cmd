@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/sound/built-in.a := rm -f bsp/drivers/sound/built-in.a;  printf "bsp/drivers/sound/%s " platform/built-in.a codecs/built-in.a misc/built-in.a pa/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/sound/built-in.a

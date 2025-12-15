@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/cpufreq/cpufreq-linux-6.6/built-in.a := rm -f bsp/drivers/cpufreq/cpufreq-linux-6.6/built-in.a;  printf "bsp/drivers/cpufreq/cpufreq-linux-6.6/%s " cpufreq-dt.o cpufreq-dt-platdev.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/cpufreq/cpufreq-linux-6.6/built-in.a

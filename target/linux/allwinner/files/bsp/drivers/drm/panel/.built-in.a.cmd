@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/drm/panel/built-in.a := rm -f bsp/drivers/drm/panel/built-in.a;  printf "bsp/drivers/drm/panel/%s " edp_general_panel.o panel-dsi.o panel-lvds.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/drm/panel/built-in.a

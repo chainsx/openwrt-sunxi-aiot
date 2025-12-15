@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/irqchip/built-in.a := rm -f bsp/drivers/irqchip/built-in.a;  printf "bsp/drivers/irqchip/%s " irq-sunxi-wakeupgen.o irq-sun8i-nmi.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/irqchip/built-in.a

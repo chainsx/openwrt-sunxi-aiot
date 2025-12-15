@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/mtd/built-in.a := rm -f bsp/drivers/mtd/built-in.a;  printf "bsp/drivers/mtd/%s " parsers/built-in.a spi-nor-6.1/built-in.a awnand/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/mtd/built-in.a

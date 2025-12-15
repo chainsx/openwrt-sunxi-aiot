@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/usb/built-in.a := rm -f bsp/drivers/usb/built-in.a;  printf "bsp/drivers/usb/%s " host/built-in.a sunxi_usb/built-in.a dwc3/built-in.a typec/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/usb/built-in.a

@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/input/built-in.a := rm -f bsp/drivers/input/built-in.a;  printf "bsp/drivers/input/%s " init-input.o ctp/built-in.a sensor/built-in.a misc/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/input/built-in.a

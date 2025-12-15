@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/misc/sunxi-addr/built-in.a := rm -f bsp/drivers/misc/sunxi-addr/built-in.a;  printf "bsp/drivers/misc/sunxi-addr/%s " sunxi-addr.o sha256.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/misc/sunxi-addr/built-in.a

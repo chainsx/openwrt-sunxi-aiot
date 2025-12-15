@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/drm/phy/built-in.a := rm -f bsp/drivers/drm/phy/built-in.a;  printf "bsp/drivers/drm/phy/%s " sunxi_dsi_combophy.o sunxi_dsi_combophy_reg.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/drm/phy/built-in.a

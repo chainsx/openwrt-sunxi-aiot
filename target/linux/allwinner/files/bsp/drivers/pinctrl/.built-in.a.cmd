@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/pinctrl/built-in.a := rm -f bsp/drivers/pinctrl/built-in.a;  printf "bsp/drivers/pinctrl/%s " pinctrl-sunxi.o pinctrl-sun60iw2.o pinctrl-sun60iw2-r.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/pinctrl/built-in.a

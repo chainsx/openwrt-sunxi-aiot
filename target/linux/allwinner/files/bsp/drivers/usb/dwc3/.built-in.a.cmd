@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/usb/dwc3/built-in.a := rm -f bsp/drivers/usb/dwc3/built-in.a;  printf "bsp/drivers/usb/dwc3/%s " phy-sunxi-plat.o dwc3-sunxi-plat.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/usb/dwc3/built-in.a

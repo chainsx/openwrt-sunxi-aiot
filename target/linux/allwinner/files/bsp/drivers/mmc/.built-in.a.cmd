@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/mmc/built-in.a := rm -f bsp/drivers/mmc/built-in.a;  printf "bsp/drivers/mmc/%s " sunxi-mmc-v4p1x.o sunxi-mmc-v4p00x.o sunxi-mmc-v4p5x.o sunxi-mmc-v5p3x.o sunxi-mmc.o sunxi-mmc-debug.o sunxi-mmc-export.o sunxi-mmc-panic.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/mmc/built-in.a

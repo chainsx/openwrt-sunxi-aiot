@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/misc/sunxi-rf/built-in.a := rm -f bsp/drivers/misc/sunxi-rf/built-in.a;  printf "bsp/drivers/misc/sunxi-rf/%s " sunxi-gnss.o sunxi-modem.o sunxi-bluetooth.o sunxi-wlan.o sunxi-rfkill.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/misc/sunxi-rf/built-in.a

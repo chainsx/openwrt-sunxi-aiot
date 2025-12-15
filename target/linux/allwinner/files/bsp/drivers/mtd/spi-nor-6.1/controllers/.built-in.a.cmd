@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/mtd/spi-nor-6.1/controllers/built-in.a := rm -f bsp/drivers/mtd/spi-nor-6.1/controllers/built-in.a;  aarch64-linux-gnu-ar cDPrST bsp/drivers/mtd/spi-nor-6.1/controllers/built-in.a

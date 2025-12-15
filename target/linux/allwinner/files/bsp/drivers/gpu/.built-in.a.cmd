@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/gpu/built-in.a := rm -f bsp/drivers/gpu/built-in.a;  printf "bsp/drivers/gpu/%s " lima/built-in.a panfrost/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/gpu/built-in.a

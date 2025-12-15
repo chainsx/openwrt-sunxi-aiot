@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/devfreq/event/built-in.a := rm -f bsp/drivers/devfreq/event/built-in.a;  printf "bsp/drivers/devfreq/event/%s " sunxi-ddrpmu.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/devfreq/event/built-in.a

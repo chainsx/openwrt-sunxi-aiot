@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/clk/built-in.a := rm -f bsp/drivers/clk/built-in.a;  printf "bsp/drivers/clk/%s " sunxi/built-in.a sunxi-ng/built-in.a clk-debugfs.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/clk/built-in.a

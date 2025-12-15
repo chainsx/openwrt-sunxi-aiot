@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/pm_domain/built-in.a := rm -f bsp/drivers/pm_domain/built-in.a;  printf "bsp/drivers/pm_domain/%s " pck600_domains.o sunxi_pd_test.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/pm_domain/built-in.a

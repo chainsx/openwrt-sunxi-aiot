@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/cpufreq/built-in.a := rm -f bsp/drivers/cpufreq/built-in.a;  printf "bsp/drivers/cpufreq/%s " cpufreq-linux-6.6/built-in.a sun50i-cpufreq-nvmem.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/cpufreq/built-in.a

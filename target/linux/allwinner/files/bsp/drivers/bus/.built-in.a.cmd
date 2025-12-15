@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/bus/built-in.a := rm -f bsp/drivers/bus/built-in.a;  printf "bsp/drivers/bus/%s " sunxi-nsi.o sunxi-nsi-ecc.o sunxi-nsi-bw.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/bus/built-in.a

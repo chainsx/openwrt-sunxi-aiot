@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/usb/typec/built-in.a := rm -f bsp/drivers/usb/typec/built-in.a;  printf "bsp/drivers/usb/typec/%s " mux/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/usb/typec/built-in.a

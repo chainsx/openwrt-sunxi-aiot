@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/car_reverse/built-in.a := rm -f bsp/drivers/car_reverse/built-in.a;  printf "bsp/drivers/car_reverse/%s " car_reverse_2_0/built-in.a car_reverse_amp/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/car_reverse/built-in.a

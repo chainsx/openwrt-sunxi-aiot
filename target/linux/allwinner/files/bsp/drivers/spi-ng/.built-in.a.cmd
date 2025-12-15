@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/spi-ng/built-in.a := rm -f bsp/drivers/spi-ng/built-in.a;  printf "bsp/drivers/spi-ng/%s " spi-sunxi.o calibrate/spi-sunxi-calibrate.o bit/spi-sunxi-bit.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/spi-ng/built-in.a

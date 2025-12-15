@@ -1,0 +1,60 @@
+From dff043b91b102b753ef5793630973f12d69a2d6c Mon Sep 17 00:00:00 2001
+From: Hsun Lai <i@chainsx.cn>
+Date: Mon, 15 Dec 2025 11:27:24 +0800
+Subject: [PATCH] add-sunxi-bsp-patch
+
+---
+ Kconfig              | 2 ++
+ Makefile             | 2 ++
+ scripts/Makefile.lib | 2 +-
+ 3 files changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/Kconfig b/Kconfig
+index 745bc773f..2e4a3acd2 100644
+--- a/Kconfig
++++ b/Kconfig
+@@ -9,6 +9,8 @@ source "scripts/Kconfig.include"
+ 
+ source "init/Kconfig"
+ 
++source "bsp/Kconfig"
++
+ source "kernel/Kconfig.freezer"
+ 
+ source "fs/Kconfig.binfmt"
+diff --git a/Makefile b/Makefile
+index ae57f8163..9adc42e21 100644
+--- a/Makefile
++++ b/Makefile
+@@ -552,6 +552,7 @@ LINUXINCLUDE    := \
+ 		-I$(objtree)/arch/$(SRCARCH)/include/generated \
+ 		$(if $(building_out_of_srctree),-I$(srctree)/include) \
+ 		-I$(objtree)/include \
++		-I$(srctree)/bsp/include \
+ 		$(USERINCLUDE)
+ 
+ KBUILD_AFLAGS   := -D__ASSEMBLY__ -fno-PIE
+@@ -745,6 +746,7 @@ ifeq ($(KBUILD_EXTMOD),)
+ # Objects we will link into vmlinux / subdirs we need to visit
+ core-y		:=
+ drivers-y	:=
++drivers-y	+= bsp/
+ libs-y		:= lib/
+ endif # KBUILD_EXTMOD
+ 
+diff --git a/scripts/Makefile.lib b/scripts/Makefile.lib
+index 4aecfb0a0..dde520fa6 100644
+--- a/scripts/Makefile.lib
++++ b/scripts/Makefile.lib
+@@ -242,7 +242,7 @@ cpp_flags      = -Wp,-MMD,$(depfile) $(NOSTDINC_FLAGS) $(LINUXINCLUDE)     \
+ 
+ ld_flags       = $(KBUILD_LDFLAGS) $(ldflags-y) $(LDFLAGS_$(@F))
+ 
+-DTC_INCLUDE    := $(srctree)/scripts/dtc/include-prefixes
++DTC_INCLUDE    := $(srctree)/scripts/dtc/include-prefixes $(srctree)/bsp/include
+ 
+ dtc_cpp_flags  = -Wp,-MMD,$(depfile).pre.tmp -nostdinc                    \
+ 		 $(addprefix -I,$(DTC_INCLUDE))                          \
+-- 
+2.43.0
+

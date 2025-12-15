@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/usb/typec/mux/built-in.a := rm -f bsp/drivers/usb/typec/mux/built-in.a;  printf "bsp/drivers/usb/typec/mux/%s " ps8743.o sunxi-phy-switcher.o | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/usb/typec/mux/built-in.a

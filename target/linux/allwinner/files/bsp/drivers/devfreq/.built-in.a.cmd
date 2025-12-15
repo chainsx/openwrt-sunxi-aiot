@@ -1,0 +1,1 @@
+savedcmd_bsp/drivers/devfreq/built-in.a := rm -f bsp/drivers/devfreq/built-in.a;  printf "bsp/drivers/devfreq/%s " sun55iw3-devfreq.o event/built-in.a | xargs aarch64-linux-gnu-ar cDPrST bsp/drivers/devfreq/built-in.a
